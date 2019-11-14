@@ -7,8 +7,6 @@ ingredients_hash = JSON.parse(ingredient_serialized)
 
 ingredients = ingredients_hash['drinks']
 ingredients.each do |ingredient|
-  Ingredient.create(name: ingredient['strIngredient1'])
+  puts "#{ingredient['strIngredient1']}"
 end
-
-puts "#{ingredients.count} ingredients seeded!"
 
